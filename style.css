@@ -49,6 +49,12 @@ body {
   color: var(--white-red);
 }
 
+#active {
+  border: 1px solid var(--light-grey);
+  border-radius: 5px;
+  padding: 2px;
+}
+
 /* Main Section */
 main {
     background-image: linear-gradient(to bottom, rgba(115, 115, 121, 0.522), rgba(102, 89, 99, 0.73)),
@@ -95,27 +101,64 @@ main {
 .btn:hover {
     background-color: var(--white-red);
     color: var(--white);
+    scale: 1.5;
 }
 
 /* services Section */
+.service-title {
+  color: var(--white);
+}
 .services {
+  background-image: url(./images/services.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   display: flex;
-  height: 100vh;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  gap: 2px;
 }
 
-.cards {
-  width: 100%;
-  border: 2px solid var(--white-red);
-  text-align: center;
+.mycards { 
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  text-align: center;
+  border: 2px solid var(--white-red);
+  width: 300px;
+  background: transparent;
+  color: var(--white);
 }
 
 .mycards img {
   width: 100px;
   height: 100px;
+  padding-top: 10px;
 }
 
-.mycards img:notlastchild {
-  margin-bottom: 10px;
+.card-title {
+  padding: 10px;
+}
+
+.card-description {
+  padding-top: 15px;
+}
+
+.card-btn {
+  font-family: 'Roboto', sans-serif;
+  margin-top: 10px;
+  padding:10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.25s all ease;
+}
+
+.card-btn:hover {
+  color: var(--white);
+  background-color: var(--white-red);
+  scale: 1.2;
 }
