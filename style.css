@@ -118,7 +118,7 @@ main {
   display: flex;
   justify-content: center;
   padding: 20px;
-  gap: 2px;
+  gap: 20px;
 }
 
 .mycards { 
@@ -131,6 +131,12 @@ main {
   width: 300px;
   background: transparent;
   color: var(--white);
+  border-radius: 10px;
+  transition: all .3s ease;
+}
+
+.mycards:hover {
+  scale: 1.1;
 }
 
 .mycards img {
