@@ -4,7 +4,6 @@ import 'react-toastify/dist/ReactToastify.css';
 import { useSelector, useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { signup } from '../../redux/user/authentication';
-import './user.css';
 
 const Signup = () => {
   const [name, setName] = useState('');
