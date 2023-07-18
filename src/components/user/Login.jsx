@@ -21,7 +21,7 @@ const Login = () => {
   };
 
   return (
-    <div className="container">
+    <section className="login__container">
       <form onSubmit={handelSubmit}>
         <h2>Login Here!</h2>
         <div className="form-group">
@@ -55,7 +55,7 @@ const Login = () => {
           </button>
         </div>
       </form>
-    </div>
+    </section>
   );
 };
 

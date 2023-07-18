@@ -4,6 +4,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import { useSelector, useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { signup } from '../../redux/user/authentication';
+import './user.css';
 
 const Signup = () => {
   const [name, setName] = useState('');
@@ -38,7 +39,7 @@ const Signup = () => {
   }, [success, navigate]);
 
   return (
-    <div className="container">
+    <section className="signup__container">
       <form onSubmit={handelSubmit}>
         <h2>Create Your Account Here!</h2>
         <div className="form-group">
@@ -90,7 +91,7 @@ const Signup = () => {
           <button type="button" onClick={() => navigate('/')}>Login</button>
         </div>
       </form>
-    </div>
+    </section>
   );
 };
 
