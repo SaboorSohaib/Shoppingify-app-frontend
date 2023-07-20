@@ -1,5 +1,7 @@
 import { configureStore, combineReducers } from '@reduxjs/toolkit';
 import { authenticationReducer } from './user/authentication';
+import categorySlice from './Category/categorySlice';
+import itemSlice from './Item/itemSlice';
 
 const token = localStorage.getItem('token');
 const initialState = {
@@ -11,6 +13,8 @@ const initialState = {
 
 const rootReducer = combineReducers({
   auth: authenticationReducer,
+  categories: categorySlice,
+  items: itemSlice,
 });
 
 export default configureStore({
