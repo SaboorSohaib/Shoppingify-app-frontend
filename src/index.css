@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Quicksand:wght@300;400;500;600;700&display=swap');
 
 * {
   margin: 0;
@@ -19,6 +20,7 @@
   --color-primary-variant: #fff0de;
   --color-dark: #80485b;
   --color-white: #fff;
+  --color-black: #000;
   --container-width-lg: 75%;
   --container-width-md: 86%;
   --container-width-sm: 90%;
@@ -30,9 +32,9 @@ html {
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   background: var(--color-bg);
-  color: var(--color-white);
+  color: var(--color-black);
   line-height: 1.7;
 }
 
