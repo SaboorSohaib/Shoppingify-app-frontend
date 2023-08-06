@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import { getItemsThunk } from '../../redux/Item/itemSlice';
 import Category from '../category/Category';
 import HeaderText from '../headerText/HeaderText';
-// import ShowItem from './Showitem';
 import './item.css';
 
 const Item = () => {
@@ -12,11 +11,6 @@ const Item = () => {
   const status = useSelector((state) => state.status);
   const { categories } = useSelector((state) => state.categories);
   const { itemsByCategory } = useSelector((state) => state.items);
-  // const [isLoading, setIsLoading] = useState(false);
-  // const [selectedItemId, setSelectedItemId] = useState(null);
-  // const handleItemClick = (itemId) => {
-  //   setSelectedItemId(itemId);
-  // };
 
   useEffect(() => {
     if (categories && categories.length > 0) {
@@ -52,19 +46,6 @@ const Item = () => {
             <div className="item__card">
               {itemsByCategory[category.id].map((item) => (
                 <div className="item__info" key={item.id}>
-                  {/* <a
-                    className="item__name"
-                    onClick={() => handleItemClick(item.id)}
-                    onKeyDown={(event) => {
-                      if (event.key === 'Enter') {
-                        handleItemClick(item.id);
-                      }
-                    }}
-                    tabIndex="0" // Ensure the element is focusable
-                    role="button"
-                  >
-                    {item.name}
-                  </a> */}
                   <Link
                     className="item__name"
                     to={`/categories/${category.id}/items/${item.id}`}
@@ -79,7 +60,6 @@ const Item = () => {
           </div>
         ))}
       </div>
-      {/* {selectedItemId !== null && <ShowItem itemId={selectedItemId} />} */}
     </section>
   );
 };
