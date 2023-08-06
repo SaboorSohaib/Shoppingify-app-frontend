@@ -13,8 +13,8 @@
 .sidebar__content {
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Center the icons vertically */
-  align-items: center; /* Center the icons horizontally */
+  justify-content: center;
+  align-items: center;
   flex: 1;
 }
 
