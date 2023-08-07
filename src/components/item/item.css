@@ -80,7 +80,6 @@ textarea {
 }
 
 .option {
-  /* Your custom styles for the individual options */
   width: 294px !important;
   height: 46px !important;
   border-radius: 12px !important;
