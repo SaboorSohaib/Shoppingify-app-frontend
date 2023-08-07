@@ -1,8 +1,9 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
+import { Link } from 'react-router-dom';
 import { getItemsThunk } from '../../redux/Item/itemSlice';
-import Category from '../category/Category';
-import HeaderText from '../headerText/HeaderText';
+import Category from '../Category/Category';
+import HeaderText from '../HeaderText/HeaderText';
 import './item.css';
 
 const Item = () => {
