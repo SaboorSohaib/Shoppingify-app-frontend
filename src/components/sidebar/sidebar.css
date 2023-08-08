@@ -20,8 +20,6 @@
 
 .authenticated__route {
   display: flex;
-
-  /* justify-content: space-between; */
 }
 
 nav a {
