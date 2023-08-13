@@ -16,7 +16,6 @@ const AuthenticatedRoute = () => {
   }
 
   const handleItemClick = () => {
-    // Set showAddItem to false when an item is clicked
     setShowAddItem(false);
   };
 
