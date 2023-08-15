@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { Link } from 'react-router-dom';
 import { getItemsThunk } from '../../redux/Item/itemSlice';
 import Category from '../category/Category';
 import HeaderText from '../headerText/HeaderText';
@@ -11,7 +10,6 @@ const Item = () => {
   const status = useSelector((state) => state.status);
   const { categories } = useSelector((state) => state.categories);
   const { itemsByCategory } = useSelector((state) => state.items);
-
   useEffect(() => {
     if (categories && categories.length > 0) {
       categories.forEach((category) => {
