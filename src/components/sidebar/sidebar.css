@@ -13,15 +13,13 @@
 .sidebar__content {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: center; /* Center the icons vertically */
+  align-items: center; /* Center the icons horizontally */
   flex: 1;
 }
 
 .authenticated__route {
   display: flex;
-
-  /* justify-content: space-between; */
 }
 
 nav a {
@@ -30,9 +28,4 @@ nav a {
 
 .active {
   border-left: 4px solid var(--color-primary);
-}
-
-.form {
-  display: flex;
-  justify-content: space-around;
 }

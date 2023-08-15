@@ -19,12 +19,7 @@
       "react/react-in-jsx-scope": "off",
       "import/no-unresolved": "off",
       "no-shadow": "off",
-      "jsx-a11y/anchor-is-valid": "off",
-      "jsx-a11y/label-has-associated-control": ["error", {
-        "required": {
-          "some": ["nesting", "id"]
-        }
-      }]
+      "jsx-a11y/anchor-is-valid": "off"
     },
     "overrides": [
       {
