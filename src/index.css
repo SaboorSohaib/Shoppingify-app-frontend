@@ -42,6 +42,10 @@ body {
   .container {
     width: var(--container-width-md);
   }
+
+  section {
+    margin-top: 6rem;
+  }
 }
 
 @media screen and (max-width: 600px) {
