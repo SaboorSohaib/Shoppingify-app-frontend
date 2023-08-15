@@ -39,3 +39,79 @@
 .plus__button {
   color: #c1c1c4;
 }
+
+/* Add Item Style */
+
+.AddItem__container {
+  flex: 1;
+  padding-top: 30px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+input {
+  border: 2px solid #bdbdbd;
+  border-radius: 12px;
+  width: 310px;
+  height: 50px;
+}
+
+textarea {
+  border: 2px solid #bdbdbd;
+  border-radius: 12px;
+  width: 310px;
+  height: 100px;
+}
+
+.custom__select {
+  width: 310px;
+  height: 50px;
+  border: 2px solid #bdbdbd;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.option {
+  width: 294px !important;
+  height: 46px !important;
+  border-radius: 12px !important;
+}
+
+.button {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+}
+
+.cancel__btn {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.submit__btn {
+  border-radius: 12px;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  width: 81px;
+  height: 61px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+input::placeholder,
+textarea::placeholder {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+  color: #bdbdbd;
+  padding: 10px 0 0 10px;
+}

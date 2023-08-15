@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
+import { Link } from 'react-router-dom';
 import { getItemsThunk } from '../../redux/Item/itemSlice';
 import Category from '../Category/Category';
 import HeaderText from '../HeaderText/HeaderText';
@@ -44,7 +45,12 @@ const Item = () => {
             <div className="item__card">
               {itemsByCategory[category.id].map((item) => (
                 <div className="item__info" key={item.id}>
-                  <p>{item.name}</p>
+                  <Link
+                    className="item__name"
+                    to={`/categories/${category.id}/items/${item.id}`}
+                  >
+                    {item.name}
+                  </Link>
                   <span className="plus__button">+</span>
                 </div>
               ))}
@@ -53,7 +59,6 @@ const Item = () => {
           </div>
         ))}
       </div>
-
     </section>
   );
 };
